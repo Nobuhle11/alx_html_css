@@ -1,1 +1,35 @@
- 
+/* Apply Flexbox to the body: vertical layout */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Apply Flexbox to main: horizontal layout */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+/* Make article take 2/3 of width */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Make aside take 1/3 of width */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Optional: Add some basic styling */
+header, footer {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
